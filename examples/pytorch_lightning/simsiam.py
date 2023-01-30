@@ -57,7 +57,7 @@ dataloader = torch.utils.data.DataLoader(
     collate_fn=collate_fn,
     shuffle=True,
     drop_last=True,
-    num_workers=8,
+    num_workers=0,
 )
 
 gpus = 1 if torch.cuda.is_available() else 0
